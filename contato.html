@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato - Rei da Barba </title>
+		<script type="JavaScript">
+					function validar(){
+					
+					var nome = formcontato.nome.value;
+					var email = formcontato.email.value;
+						
+						if(nome==""){
+							alert('Preencha o campo nome.');
+							formcontato.nome.focus();
+							return false;
+						}
+						
+						if(email==""){
+							alert('preencha o campo email.');
+							formcontato.email.focus();
+							return false;
+						}
+					
+					}
+		</script>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png" alt="Logo da Barbearia" height="200" width="150"></h1>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<form name="formcontato" action="enviar.php" method="POST">
+			
+				<label>Informações do Projeto</label> &nbsp
+				
+				<label>Projeto Final: Interface Humano-Computador</label> &nbsp
+				
+				<label>Nome: Gabriel Félix Sampaio Lima</label>&nbsp
+				
+				<label>Codigo: 823955</label> &nbsp
+				
+				<label>Informações para contato</label>
+				
+				Nome:<Input Type="text" name="nome"><br><br>
+				Email:<input type="email" name="email"><br><br>
+				
+				<input type="submit" value="Enviar">
+
+			</form>
+		</main> 
+		
+		<footer>
+			<img src="logo.png" height="200" width="150">
+			<p class="copyright">&copy; Copyright Rei da Barba - 2020</p>
+		</footer>
+	</body>
+</html>
